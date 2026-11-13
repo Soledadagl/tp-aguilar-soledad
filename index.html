@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorador de episodios de Rick and Morty">
+    <title>Explorador de Episodios | Rick and Morty</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <div>
+                <p class="etiqueta">UNIVERSO RICK AND MORTY</p>
+                <h1>Explorador de episodios</h1>
+                <p class="subtitulo">
+                    Busca tus episodios favoritos del multiverso.
+                </p>
+            </div>
+            <span class="portal" aria-hidden="true">🌀</span>
+        </div>
+    </header>
+
+    <main class="contenedor principal">
+        <section class="panel-busqueda" aria-labelledby="titulo-busqueda">
+            <h2 id="titulo-busqueda">Encuentra un episodio</h2>
+            <p>Escribe un nombre y selecciona una temporada.</p>
+
+            <form id="formulario-busqueda">
+                <div class="campo">
+                    <label for="nombre">Nombre del episodio</label>
+                    <input
+                        type="search"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ej.: Rick, Morty, Pilot..."
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="temporada">Temporada</label>
+                    <select id="temporada" name="temporada">
+                        <option value="">Todas las temporadas</option>
+                        <option value="S01">Temporada 1</option>
+                        <option value="S02">Temporada 2</option>
+                        <option value="S03">Temporada 3</option>
+                        <option value="S04">Temporada 4</option>
+                        <option value="S05">Temporada 5</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="boton-buscar">
+                    Buscar episodios
+                </button>
+            </form>
+        </section>
+
+        <section class="resultados" aria-labelledby="titulo-resultados">
+            <div class="resultados-encabezado">
+                <h2 id="titulo-resultados">Resultados</h2>
+                <span id="contador" class="contador">0 episodios</span>
+            </div>
+
+            <p id="mensaje" class="mensaje" role="status" aria-live="polite">
+                Escribe un nombre o selecciona una temporada para comenzar.
+            </p>
+
+            <div id="lista-episodios" class="grilla-episodios"></div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Trabajo Práctico · Fundamentos de Desarrollo Web</p>
+        <p>Realizado por Soledad Aguilar · Ingeniería en Informática</p>
+        <p>Datos proporcionados por Rick and Morty API</p>
+    </footer>
+</body>
+</html>
