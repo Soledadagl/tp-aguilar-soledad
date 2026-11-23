@@ -28,3 +28,12 @@ La captura de pantalla de la página se encuentra en `img/captura.png`.
 ## API utilizada
 
 https://rickandmortyapi.com/documentation
+
+
+## Resolución de problemas
+
+- Verificar la conexión a Internet.
+- Comprobar que la dirección de la API sea correcta.
+- Recargar la página si los datos no se muestran.
+- Revisar la consola del navegador si aparece un error.
+
